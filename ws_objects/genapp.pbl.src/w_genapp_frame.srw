@@ -1,4 +1,4 @@
-HA$PBExportHeader$w_genapp_frame.srw
+﻿$PBExportHeader$w_genapp_frame.srw
 $PBExportComments$Generated MDI Frame
 forward
 global type w_genapp_frame from window
@@ -13,7 +13,7 @@ integer y = 132
 integer width = 2409
 integer height = 1572
 boolean titlebar = true
-string title = "Frame"
+string title = "Frame_branch2"
 string menuname = "m_genapp_frame"
 boolean controlmenu = true
 boolean minbox = true
