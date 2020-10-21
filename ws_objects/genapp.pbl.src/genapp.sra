@@ -1,4 +1,4 @@
-HA$PBExportHeader$genapp.sra
+﻿$PBExportHeader$genapp.sra
 $PBExportComments$Generated MDI Application Object
 forward
 global type genapp from application
@@ -12,24 +12,35 @@ end forward
 
 global type genapp from application
 string appname = "genapp"
+string displayname = "branch_master"
+string themepath = "C:\Program Files (x86)\Appeon\PowerBuilder 19.0\IDE\theme"
+string themename = "Do Not Use Themes"
+boolean nativepdfvalid = false
+boolean nativepdfincludecustomfont = false
+string nativepdfappname = ""
+long richtextedittype = 2
+long richtexteditversion = 1
+string richtexteditkey = ""
+string appicon = ""
+string fullbuildruntimeversion = ""
 end type
 global genapp genapp
 
 on genapp.create
-appname = "genapp"
-message = create message
-sqlca = create transaction
-sqlda = create dynamicdescriptionarea
-sqlsa = create dynamicstagingarea
-error = create error
+appname="genapp"
+message=create message
+sqlca=create transaction
+sqlda=create dynamicdescriptionarea
+sqlsa=create dynamicstagingarea
+error=create error
 end on
 
 on genapp.destroy
-destroy( sqlca )
-destroy( sqlda )
-destroy( sqlsa )
-destroy( error )
-destroy( message )
+destroy(sqlca)
+destroy(sqlda)
+destroy(sqlsa)
+destroy(error)
+destroy(message)
 end on
 
 event open;//*-----------------------------------------------------------------*/
